@@ -1,7 +1,7 @@
 export const data = [
     {
         id: crypto.randomUUID(),
-        cover: 'iron-man.png',
+        cover: 'avatar.png',
         title: 'Iron Man.... in Hollywood',
         description:
             'Iron Man is a widely recognized fictional superhero created by Marvel Comics. The character was co-created by writer Stan Lee, developed by scripter Larry Lieber, and visually designed by artists Don Heck and Jack Kirby. He made his very first appearance in the comic book Tales of Suspense #39 in March 1963.',
@@ -11,7 +11,7 @@ export const data = [
     },
     {
         id: crypto.randomUUID(),
-        cover: 'marriage-story.jpg',
+        cover: 'marriage-strory.jpg',
         title: 'Spider-Man: The Friendly Hero',
         description:
             'Spider-Man is a superhero created by writer Stan Lee and artist Steve Ditko. He first appeared in Amazing Fantasy #15 in 1962 and gained powers from a radioactive spider bite.',
@@ -41,7 +41,7 @@ export const data = [
     },
     {
         id: crypto.randomUUID(),
-        cover: 'pain-and-gain.png',
+        cover: 'pain-and-gain.jpg',
         title: 'Thor: God of Thunder',
         description:
             'Thor is a Marvel superhero based on the Norse god of thunder. He wields the hammer Mjölnir and protects both Asgard and Earth.',
