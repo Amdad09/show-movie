@@ -1,7 +1,7 @@
-import { getImageUrl } from "../utils/cine-utils";
+import { getImageUrl } from '../utils/cine-utils';
 
-export default function MovieDetailsModal({ movie, onCancleModal }) {
-    const { title, description, cover, rating, price, genr } = movie;
+export default function MovieDetailsModal({ movie, onCancleModal, onAddToCart }) {
+    const { title, description, cover, price, genr } = movie;
     return (
         <div className="fixed top-0 left-0 w-screen h-screen z-50 bg-black/60 backdrop-blur-sm">
             <div className="absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 w-full max-w-[420px] sm:max-w-[600px] lg:max-w-[984px] p-4 max-h-[90vh] overflow-auto">
@@ -26,6 +26,10 @@ export default function MovieDetailsModal({ movie, onCancleModal }) {
                         </p>
                         <div className="grid lg:grid-cols-2 gap-2">
                             <a
+                                onClick={(e) => {
+                                    e.stopPropagation();
+                                    onAddToCart(movie);
+                                }}
                                 className="bg-[#00D991] rounded-lg py-2 px-5 flex items-center justify-center gap-2 text-[#171923] font-semibold text-sm"
                                 href="#"
                             >
@@ -35,7 +39,6 @@ export default function MovieDetailsModal({ movie, onCancleModal }) {
                             <a
                                 onClick={onCancleModal}
                                 className="border border-[#74766F] rounded-lg py-2 px-5 flex items-center justify-center gap-2 text-[#6F6F6F] dark:text-gray-200 font-semibold text-sm"
-                                href="#"
                             >
                                 Cancel
                             </a>

@@ -1,5 +1,6 @@
-.bg-primary{
-    background-color: '#00D991'
+button, a{
+    cursor: pointer;
 }
 
 @import 'tailwindcss';
+@custom-variant dark (&:where(.dark, .dark *));
